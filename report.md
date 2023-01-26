@@ -2,7 +2,7 @@
 
 Yay, no errors, warnings, or alerts!
 
-Conversion time: 1.079 seconds.
+Conversion time: 1.247 seconds.
 
 
 Using this Markdown file:
@@ -15,21 +15,10 @@ Using this Markdown file:
 Conversion notes:
 
 * Docs to Markdown version 1.0β34
-* Thu Jan 26 2023 15:14:34 GMT-0800 (PST)
+* Thu Jan 26 2023 15:16:02 GMT-0800 (PST)
 * Source doc: seng438-a1-mycopy
 * Tables are currently converted to HTML tables.
-
-WARNING:
-You have 8 H1 headings. You may want to use the "H1 -> H2" option to demote all headings by one level.
-
 ----->
-
-
-<p style="color: red; font-weight: bold">>>>>>  gd2md-html alert:  ERRORs: 0; WARNINGs: 1; ALERTS: 0.</p>
-<ul style="color: red; font-weight: bold"><li>See top comment block for details on ERRORs and WARNINGs. <li>In the converted Markdown or HTML, search for inline alerts that start with >>>>>  gd2md-html alert:  for specific instances that need correction.</ul>
-
-<p style="color: red; font-weight: bold">Links to alert messages:</p>
-<p style="color: red; font-weight: bold">>>>>> PLEASE check and correct alert issues and delete this message and the inline alerts.<hr></p>
 
 
 **SENG 438 - Software Testing, Reliability, and Quality**
@@ -62,7 +51,7 @@ You have 8 H1 headings. You may want to use the "H1 -> H2" option to demote all 
 
 
 
-# Table of Contents
+## Table of Contents
 
 
 [TOC]
@@ -71,12 +60,12 @@ You have 8 H1 headings. You may want to use the "H1 -> H2" option to demote all 
 	
 
 
-# Introduction {#introduction}
+## Introduction {#introduction}
 
 In this lab, we are given the task of testing an ATM application under exploratory and manual functional testing (MFT) principles. The application has two versions - the initial release and an updated release that incorporates changes based on imaginary defect reports. This models an environment in which we can perform regression tests. MFT involves verifying a predetermined list of test cases to ensure that the basic requirements are functioning properly. In contrast, exploratory testing is a more open-ended approach where testers actively search for bugs and defects without following a rigid testing plan. The goal of this lab is to gain hands-on experience with software testing and gain a high-level understanding of different testing methods.
 
 
-# High-level description of the exploratory testing plan {#high-level-description-of-the-exploratory-testing-plan}
+## High-level description of the exploratory testing plan {#high-level-description-of-the-exploratory-testing-plan}
 
 Our exploratory testing plan consisted of two pair testing groups.The first group tested as a typical ATM user. The second group tested as an ATM thief, where the individual would take unconventional paths to try and exploit the machine. Each individual pair alternated between testing and note taking to discover new perspectives. 
 
@@ -110,17 +99,17 @@ For this plan, we did more extensive testing of the login and withdrawal functio
 10. Checking to see if you could transfer money from an unavailable account to an available account
 
 
-# Comparison of exploratory and manual functional testing {#comparison-of-exploratory-and-manual-functional-testing}
+## Comparison of exploratory and manual functional testing {#comparison-of-exploratory-and-manual-functional-testing}
 
 Exploratory testing is a process that utilizes a tester’s creativity, intuition and experience rather than well-defined testing scripts to guide the process. Starting with the exploratory tests first allowed the team to freely try different functionalities and become familiar with a system we had not used before. We caught most of the bugs during the exploratory testing phase and it allowed us to understand the requirements of the application before we proceeded to manual function testing (MFT). The manual functional testing was more rigorous and detailed than exploratory. It covered each function/use case and provided pre-defined information on the initial state of the system and expected outcome. MFT was more efficient as the test cases were performed systematically and split up between team members to avoid duplication and wasting time. However, there could be some trade-offs between MFT and exploratory testing. MFT requires testers to follow the scripts provided and this is rigid so some bugs in the application might get overlooked. Whereas exploratory allows the tester to try out more exceptional pathways or edge cases that may not be included in the MFT scripts. But exploratory testing can be inefficient. We noticed during this phase some of the issues in the Jira backlog were duplicates. As well, once a bug was discovered during exploratory testing, sometimes we had to repeat the steps so we could note down exactly what the initial state and inputs were to reach the error.
 
 Since the ATM system was a simple application most of the bugs were discovered during the first phase of exploratory testing. However, for more complex applications, detailed test plans and scripts as provided in manual functional testing are required. Both styles of testing have their benefits and challenges so it's fair to say a good testing approach might be to use them in conjunction like we did in this lab. This would allow the greatest number of bugs to be caught and resolved, which is the ultimate goal of any QA team.
 
 
-# Notes and Discussion of the Peer Reviews of defect reports {#notes-and-discussion-of-the-peer-reviews-of-defect-reports}
+## Notes and Discussion of the Peer Reviews of defect reports {#notes-and-discussion-of-the-peer-reviews-of-defect-reports}
 
 
-## Individual Feedback and Discussion Points {#individual-feedback-and-discussion-points}
+### Individual Feedback and Discussion Points {#individual-feedback-and-discussion-points}
 
 Aarushi:
 
@@ -149,7 +138,7 @@ Ahsan:
 * Despite using pair testing, we were still able to spot some overlooked defects such as the log of transactions showing the incorrect card number (e.g 1 or 2). We found that because this defect was common across all test cases, it led to a lot of duplicates in the reporting. As future reference, it would be a better idea to review the reported bugs before proceeding to report defects.
 
 
-## Pair Testing Results {#pair-testing-results}
+### Pair Testing Results {#pair-testing-results}
 
 **Pair 1 (regular ATM Users)**
 
@@ -336,7 +325,7 @@ Ahsan:
 
 
 
-# How the pair testing was managed and team work/effort was divided  {#how-the-pair-testing-was-managed-and-team-work-effort-was-divided}
+## How the pair testing was managed and team work/effort was divided  {#how-the-pair-testing-was-managed-and-team-work-effort-was-divided}
 
 Following the guidelines of pair testing, the two pairs formed were: 
 
@@ -352,7 +341,7 @@ Luke & Jonathan: Within the second pair, each person alternated between explorat
 For the manual functional tests, all the test cases were divided evenly between the team members and we each did ten tests. For the regression tests, each team member tested their MFTs and exploratory tests from the previous phases.
 
 
-# Difficulties encountered, challenges overcome, and lessons learned {#difficulties-encountered-challenges-overcome-and-lessons-learned}
+## Difficulties encountered, challenges overcome, and lessons learned {#difficulties-encountered-challenges-overcome-and-lessons-learned}
 
 Teamwork was crucial to our success as various tasks were distributed among team members. Effective communication was a key factor in our success as we moved through the various phases of testing. After finishing a test, we realized the importance of thoroughly documenting any additional issues that were identified during the process in order to avoid repeated efforts. Another big lesson we learned was the importance of establishing explicit roles before beginning the testing process. We frequently went back and forth to confirm tasks and responsibilities, which stunted our progress. It would have been beneficial to create a shared outline that provides these details in advance. 
 
@@ -361,7 +350,7 @@ One of the most important things we learned during the technical portions of the
 One significant challenge we encountered was the need to be very descriptive when documenting our testing logs such that bugs can be replicated consistently under the same conditions. Failure to do this could cause regression tests results to be unreliable. We learned that we should document the basic workflow of the application (Ex: from turning it on to inserting the card) as they were redundant in many of the tests we performed. In the future, it may be useful to separate these steps into their own sub-section in order to make the size of our individual bug reports shorter. 
 
 
-# Comments/feedback on the lab and lab document itself {#comments-feedback-on-the-lab-and-lab-document-itself}
+## Comments/feedback on the lab and lab document itself {#comments-feedback-on-the-lab-and-lab-document-itself}
 
 Luke:
 
